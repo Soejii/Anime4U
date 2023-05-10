@@ -82,7 +82,53 @@ class _MainScreenState extends State<MainScreen> {
                 color: mainPurple,
               ),
               child: Row(
-                children: [Image.asset('assets/image/foto.png')],
+                children: [
+                  Flexible(
+                    flex: 1,
+                    child: Image.network(
+                      'https://gogocdn.net/cover/kaminaki-sekai-no-kamisama-katsudou-1679555300.png',
+                      fit: BoxFit.fill,
+                      scale: 2,
+                    ),
+                  ),
+                  Flexible(
+                    flex: 2,
+                    child: Padding(
+                        padding: EdgeInsets.only(left: 16),
+                        child: Column(
+                          children: [
+                            Text(
+                              'One Piece Red',
+                              style: GoogleFonts.poppins(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              'One Piece Red',
+                              style: GoogleFonts.poppins(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              'One Piece Red',
+                              style: GoogleFonts.poppins(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              'One Piece Red',
+                              style: GoogleFonts.poppins(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                          ],
+                        )),
+                  )
+                ],
               ),
             ),
           )
